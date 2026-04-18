@@ -1,3 +1,5 @@
+# Tredence: AI and Data Analytics Intelligence.
+
 # Self-Pruning Neural Network - Technical Report (Rubric-First)
 
 ## 1) Objective

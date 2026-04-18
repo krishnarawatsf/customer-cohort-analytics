@@ -1,3 +1,5 @@
+# Tredence: AI and Data Analytics Intelligence.
+
 # Self-Pruning Neural Network - Tredence Case Study
 
 Rubric-first CIFAR-10 training script with an optional `--enhanced` mode for extra engineering tricks.
