@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+
+# Matplotlib cache
+.mplconfig/
+
+# Logs
+*.log
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Large local data archives
+data/cifar-10-python.tar.gz

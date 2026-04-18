@@ -1,0 +1,81 @@
+{
+  "config": {
+    "seed": 42,
+    "enhanced": false,
+    "show_progress": false,
+    "epochs": 40,
+    "batch_size": 128,
+    "num_workers": 0,
+    "lr": 0.001,
+    "weight_decay": 0.0,
+    "lr_weights": 0.001,
+    "lr_gates": 0.0005,
+    "weight_decay_weights": 5e-05,
+    "label_smoothing": 0.1,
+    "gradient_clip_norm": 1.0,
+    "val_split": 0.1,
+    "early_stopping_patience": 8,
+    "warmup_epochs": 8,
+    "gate_temp_start": 2.0,
+    "gate_temp_end": 0.7,
+    "aux_sparsity_weight": 0.05,
+    "lambda_values": [
+      0.0001,
+      0.001,
+      0.01
+    ],
+    "sparse_threshold": 0.01,
+    "plots_dir": "plots",
+    "results_json": "results_summary.json"
+  },
+  "results": [
+    {
+      "lambda_value": 0.0001,
+      "final_test_accuracy": 55.44,
+      "global_sparsity_percent": 75.32352805137634,
+      "layer_sparsity_percent": {
+        "fc1": 76.46496891975403,
+        "fc2": 62.68157958984375,
+        "fc3": 21.2890625
+      },
+      "gate_entropy": {
+        "fc1": 0.039332058280706406,
+        "fc2": 0.08348201960325241,
+        "fc3": 0.41735291481018066
+      },
+      "best_val_accuracy": null
+    },
+    {
+      "lambda_value": 0.001,
+      "final_test_accuracy": 55.23,
+      "global_sparsity_percent": 99.57861304283142,
+      "layer_sparsity_percent": {
+        "fc1": 99.84626770019531,
+        "fc2": 96.89865112304688,
+        "fc3": 72.3437488079071
+      },
+      "gate_entropy": {
+        "fc1": 0.005682497750967741,
+        "fc2": 0.00959976576268673,
+        "fc3": 0.08484500646591187
+      },
+      "best_val_accuracy": null
+    },
+    {
+      "lambda_value": 0.01,
+      "final_test_accuracy": 46.18,
+      "global_sparsity_percent": 99.97146129608154,
+      "layer_sparsity_percent": {
+        "fc1": 100.0,
+        "fc2": 99.6826171875,
+        "fc3": 97.22656011581421
+      },
+      "gate_entropy": {
+        "fc1": 0.0030919320415705442,
+        "fc2": 0.0037099337205290794,
+        "fc3": 0.012152815237641335
+      },
+      "best_val_accuracy": null
+    }
+  ]
+}
