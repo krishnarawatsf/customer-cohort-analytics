@@ -1,4 +1,4 @@
-# Tredence: AI and Data Analytics Intelligence.
+# AutoPrune: AI and Data Analytics Intelligence.
 
 # Self-Pruning Neural Network - Tredence Case Study
 
